@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity MonthlyBudget.
+    -->
+    <changeSet id="20240207130525-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="user_id"
+                                 baseTableName="monthly_budget"
+                                 constraintName="fk_monthly_budget__user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="user"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="expense_category_id"
+                                 baseTableName="monthly_budget"
+                                 constraintName="fk_monthly_budget__expense_category_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="expense_category"
+                                 />
+    </changeSet>
+</databaseChangeLog>

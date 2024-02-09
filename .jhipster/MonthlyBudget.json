@@ -1,0 +1,32 @@
+{
+  "annotations": {
+    "changelogDate": "20240207130525"
+  },
+  "applications": "*",
+  "entityTableName": "monthly_budget",
+  "fields": [
+    {
+      "fieldName": "amount",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "name": "MonthlyBudget",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "monthlyBudget",
+      "relationshipName": "user",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one",
+      "relationshipWithBuiltInEntity": true
+    },
+    {
+      "otherEntityName": "expenseCategory",
+      "relationshipName": "expenseCategory",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

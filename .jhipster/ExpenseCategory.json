@@ -1,0 +1,32 @@
+{
+  "annotations": {
+    "changelogDate": "20240207130725"
+  },
+  "applications": "*",
+  "entityTableName": "expense_category",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "name": "ExpenseCategory",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "monthlyBudget",
+      "otherEntityRelationshipName": "expenseCategory",
+      "relationshipName": "monthlyBudget",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "expense",
+      "otherEntityRelationshipName": "expenseCategory",
+      "relationshipName": "expense",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

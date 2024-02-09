@@ -1,0 +1,26 @@
+{
+  "notificationsProjApp": {
+    "monthlyBudget": {
+      "home": {
+        "title": "Monthly Budgets",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Monthly Budget",
+        "createOrEditLabel": "Create or edit a Monthly Budget",
+        "notFound": "No Monthly Budgets found"
+      },
+      "created": "A new Monthly Budget is created with identifier {{ param }}",
+      "updated": "A Monthly Budget is updated with identifier {{ param }}",
+      "deleted": "A Monthly Budget is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Monthly Budget {{ id }}?"
+      },
+      "detail": {
+        "title": "Monthly Budget"
+      },
+      "id": "ID",
+      "amount": "Amount",
+      "user": "User",
+      "expenseCategory": "Expense Category"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "annotations": {
+    "changelogDate": "20240207130325"
+  },
+  "applications": "*",
+  "entityTableName": "report",
+  "fields": [
+    {
+      "fieldName": "generatedDate",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "Report",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "reports",
+      "relationshipName": "user",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one",
+      "relationshipWithBuiltInEntity": true
+    }
+  ],
+  "searchEngine": "no"
+}

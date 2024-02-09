@@ -1,0 +1,27 @@
+{
+  "notificationsProjApp": {
+    "savingGoal": {
+      "home": {
+        "title": "Saving Goals",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Saving Goal",
+        "createOrEditLabel": "Create or edit a Saving Goal",
+        "notFound": "No Saving Goals found"
+      },
+      "created": "A new Saving Goal is created with identifier {{ param }}",
+      "updated": "A Saving Goal is updated with identifier {{ param }}",
+      "deleted": "A Saving Goal is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Saving Goal {{ id }}?"
+      },
+      "detail": {
+        "title": "Saving Goal"
+      },
+      "id": "ID",
+      "targetAmount": "Target Amount",
+      "currentAmount": "Current Amount",
+      "targetDate": "Target Date",
+      "user": "User"
+    }
+  }
+}
